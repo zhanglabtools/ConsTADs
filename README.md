@@ -10,7 +10,7 @@ This computational framework consists of three main steps, including:
 2. Collecting the TAD boundaries identified by each method and performing boundary voting;
 3. Refining the boundary score profile based on the contrast P-values of chromatin interactions using three operations, Add, Filter and Combine, to construct the TAD separation landscape.
 
-<img src="https://github.com/dangdachang/ConsTADs/raw/main/TAD%20separation%20landscape%20construction.png" style="zoom:60%;" />
+<img src="https://github.com/dangdachang/ConsTADs/raw/main/TAD%20separation%20landscape%20construction.png" width="60%" height="60%" />
 
 The TAD separation landscape can be used in scenarios such as:
 
