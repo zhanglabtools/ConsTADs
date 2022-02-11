@@ -10,6 +10,13 @@ This computational framework consists of three main steps, including:
 2. Collecting the TAD boundaries identified by each method and performing boundary voting;
 3. Refining the boundary score profile based on the contrast P-values of chromatin interactions using three operations, Add, Filter and Combine, to construct the TAD separation landscape.
 
-The TAD separation landscape can be used to compare domain boundaries across multiple cell types for discovering conserved and divergent topological structures, decipher three types of boundary regions with diverse biological features, and identify <u>Cons</u>ensus <u>T</u>opological <u>A</u>ssociating <u>D</u>omain<u>s</u> (ConsTADs).
+<img src="C:\Users\dangdachang\Desktop\TAD_intergare\TAD integrate\ConsTADs\TAD separation landscape construction.png" style="zoom:80%;" />
 
-![](https://github.com/dangdachang/ConsTADs/raw/main/CondTADs_overview.png)
+The TAD separation landscape can be used in scenarios such as:
+
+1. Comparing domain boundaries across multiple cell types for discovering conserved and divergent topological structures;
+2. Deciphering three types of boundary regions with diverse biological features;
+3. Identify <u>Cons</u>ensus <u>T</u>opological <u>A</u>ssociating <u>D</u>omain<u>s</u> (ConsTADs).
+
+<img src="C:\Users\dangdachang\Desktop\TAD_intergare\TAD integrate\ConsTADs\TAD separation landscape application.png" style="zoom:80%;" />
+
