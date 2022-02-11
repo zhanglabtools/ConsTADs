@@ -12,4 +12,4 @@ This computational framework consists of three main steps, including:
 
 The TAD separation landscape can be used to compare domain boundaries across multiple cell types for discovering conserved and divergent topological structures, decipher three types of boundary regions with diverse biological features, and identify <u>Cons</u>ensus <u>T</u>opological <u>A</u>ssociating <u>D</u>omain<u>s</u> (ConsTADs).
 
-![](C:\Users\dangdachang\Desktop\TAD_intergare\TAD integrate\ConsTADs\CondTADs.png)
+![](https://github.com/dangdachang/ConsTADs/raw/main/CondTADs.png)
