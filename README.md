@@ -6,7 +6,7 @@ Topologically associating domains (TADs) have emerged as basic structural and fu
 
 This computational framework consists of three main steps, including:
 
-1. Running different TAD-calling methods on the same Hi-C interaction profile;
+1. Running different TAD-calling methods on the same Hi-C contact map;
 2. Collecting the TAD boundaries identified by each method and performing boundary voting;
 3. Refining the boundary score profile based on the contrast P-values of chromatin interactions using three operations, Add, Filter and Combine, to construct the TAD separation landscape.
 
