@@ -1,6 +1,6 @@
 
 
-## ConsTADs
+# ConsTADs
 
 Topologically associating domains (TADs) have emerged as basic structural and functional units of genome organization, and have been determined by many computational methods from Hi-C contact maps. However, the TADs obtained by different methods vary greatly, which makes the accurate determination of TADs a challenging issue and hinders subsequent biological analyses about their organization and functions. This project is about comparing different TAD-calling methods, building the TAD separation landscape and finding the consensus TADs from results of multiple methods.
 
@@ -31,4 +31,5 @@ The TAD separation landscape can be used in scenarios such as:
 
 ## Getting start
 
-See [ConsTAD usage.ipynb](https://github.com/dangdachang/ConsTADs/blob/main/ConsTADs%20usage.ipynb)
+See [ConsTAD usage.ipynb](https://github.com/dangdachang/ConsTADs/blob/main/ConsTADs%20usage.ipynb).
+
