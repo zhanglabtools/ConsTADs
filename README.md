@@ -29,4 +29,4 @@ The TAD separation landscape can be used in scenarios such as:
 
 
 
-The tutorial of these scripts can be found in  [ConsTADs usage.html](ConsTADs usage.html) 
+The tutorial of these scripts can be found in 
