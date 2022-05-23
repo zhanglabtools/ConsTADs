@@ -31,4 +31,4 @@ The TAD separation landscape can be used in scenarios such as:
 
 ## Getting start
 
-See [](https://github.com/dangdachang/ConsTADs/blob/main/ConsTADs%20usage.ipynb)
+See [ConsTAD usage.ipynb](https://github.com/dangdachang/ConsTADs/blob/main/ConsTADs%20usage.ipynb)
