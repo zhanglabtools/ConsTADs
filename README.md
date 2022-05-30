@@ -24,7 +24,7 @@ The TAD separation landscape can be used in scenarios such as:
 3. Identify <u>Cons</u>ensus <u>T</u>opological <u>A</u>ssociating <u>D</u>omain<u>s</u> (ConsTADs).
 
 <p align="center">
-<img src="https://github.com/dangdachang/ConsTADs/raw/main/TAD%20separation%20landscape%20application.png"  width="65%" height="65%"/>
+<img src="./TAD%20separation%20landscape%20construction.png"  width="65%" height="65%"/>
 
 
 </p>
