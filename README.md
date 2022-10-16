@@ -62,8 +62,6 @@ pip install ConsTADs
 Install from source code:
 
 ```shell
-git clone https://github.com/zhanglabtools/ConsTADs.git
-cd ConsTADs
 python setup.py build
 python setup.py install
 ```
