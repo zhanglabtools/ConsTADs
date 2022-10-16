@@ -14,7 +14,7 @@ import scipy.sparse
 import scipy.stats 
 import copy
 import random
-import source
+from . import source
 
 
 def __get_bin_name_list_for_chr(chr_length, chr_symbol, resolution):

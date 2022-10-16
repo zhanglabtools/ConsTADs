@@ -9,17 +9,14 @@ import sys
 import copy
 import numpy as np
 
-src_path = 'E:/Users/dcdang/project/monkey project/TAD_intergare/ConsTADs_script/scripts' 
-if src_path not in sys.path:
-    sys.path.append(src_path)
+from . import Preprocess as pre
+from . import TadSeparationLandscape as TSL
+from . import IdentifyBoundaryRegions as IBR
+from . import GetConsTADs as GCT
 
-
-import Preprocess as pre
-import TadSeparationLandscape as TSL
-import IdentifyBoundaryRegions as IBR
-import GetConsTADs as GCT
-
-
+#src_path = 'E:/Users/dcdang/project/monkey project/TAD_intergare/ConsTADs_script/scripts'
+#if src_path not in sys.path:
+    #sys.path.append(src_path)
 
 def ConsTADs(TAD_caller_result_add, target_chr, resolution, chr_size, method_list,
              mat_file, mat_type, window_list, mat_norm_check = False, p_cut = 0.05, high_score_cut = 5, combine_dist = 2,

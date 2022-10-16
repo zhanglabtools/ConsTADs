@@ -13,7 +13,7 @@ import random
 import seaborn as sns
 import pickle
 import scipy
-import source
+from . import source
 
 
 def BuildTargetMat(bin_st, bin_ed, mat_use, resolution, cut_dist = 5000000):

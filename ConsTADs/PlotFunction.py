@@ -90,8 +90,14 @@ def DrawBdScoreMultiScalePvalue(mat_dense, Chr, st, ed, bd_cell_score_original, 
         else:
             ax1_5.set_ylabel(wd.split('-')[0], fontsize = 10)
         #ax1_5.set_xticks(cord_list, x_ticks_l, fontsize = 0, rotation = 90)
-        ax1_5.set_xticks(cord_list, ['' for k in range(len(cord_list))], fontsize = 0, rotation = 90)
-        ax1_5.set_yticks([0, 1], ['', 1], fontsize = 8,)
+        #ax1_5.set_xticks(cord_list, ['' for k in range(len(cord_list))], fontsize = 0, rotation = 90)
+        ax1_5.set_xticks(cord_list)
+        ax1_5.set_xticklabels(labels=['' for k in range(len(cord_list))], fontsize=0, rotation=90)
+
+        cord_list_y = [0, 1]
+        ax1_5.set_yticks(cord_list_y)
+        ax1_5.set_yticklabels(labels=['', 1], fontsize=8)
+
         plt.ylim([0, 1])
         if len(target_site) != 0:
             site_use = []
@@ -114,8 +120,10 @@ def DrawBdScoreMultiScalePvalue(mat_dense, Chr, st, ed, bd_cell_score_original, 
     ax5.tick_params(axis = 'y', length=5, width = 1.6)
     ax5.tick_params(axis = 'x', length=5, width = 1.6)
     ax5.set_ylabel('Bd score', fontsize = 10)
-    ax5.set_xticks(cord_list, ['' for k in range(len(cord_list))], fontsize = 0, rotation = 90)
-    
+    #ax5.set_xticks(cord_list, ['' for k in range(len(cord_list))], fontsize = 0, rotation = 90)
+    ax5.set_xticks(cord_list)
+    ax5.set_xticklabels(labels=['' for k in range(len(cord_list))], fontsize=0, rotation=90)
+
     ax6 = plt.subplot2grid((12, 7), (6 + i + 2 - 1, 0), rowspan=1,colspan=6,sharex=ax1)
     ax6.plot(list(bd_cell_score_refined['bd_score'][st:ed]), color='black')
     ax6.bar(x_axis_range, list(bd_cell_score_refined['bd_score'][st:ed]), color = '#4392c3')
@@ -134,8 +142,9 @@ def DrawBdScoreMultiScalePvalue(mat_dense, Chr, st, ed, bd_cell_score_original, 
     ax.spines['top'].set_linewidth(1.8)
     ax.tick_params(axis = 'y', length=4, width = 1.8)
     ax.tick_params(axis = 'x', length=4, width = 1.8)
-    ax.set_xticks(cord_list, x_ticks_l, fontsize = 10, rotation = -30)
-
+    #ax.set_xticks(cord_list, x_ticks_l, fontsize = 10, rotation = -30)
+    ax.set_xticks(cord_list)
+    ax.set_xticklabels(labels = x_ticks_l, fontsize = 10, rotation = -30)
 
 def DrawBdScoreMultiScalePvalue_old(mat_dense, Chr, st, ed, bd_cell_score_original, bd_cell_score_refined, df_bd_pvalue_result, peak_list, resolution, save_name, p_cut, target_site = [], fgsize = (12, 8), bin_size = 10):
     plt.figure(figsize=(fgsize[0], fgsize[1]))
@@ -656,7 +665,10 @@ def DrawPairWiseMapCompare(cell_1, cell_2, mat_dense1, mat_dense2, Chr, st, ed, 
     ax1.spines['top'].set_linewidth(0)
     ax1.tick_params(axis = 'y', length=5, width = 1.6)
     ax1.tick_params(axis = 'x', length=5, width = 1.6)
-    ax1.set_xticks(cord_list, ['' for k in range(len(cord_list))], fontsize = 0, rotation = 90)
+    #ax1.set_xticks(cord_list, ['' for k in range(len(cord_list))], fontsize = 0, rotation = 90)
+    ax1.set_xticks(cord_list)
+    ax1.set_xticklabels(labels=['' for k in range(len(cord_list))], fontsize=0, rotation=90)
+
     plt.yticks(cord_list, y_ticks_l, fontsize = 10)
     ax1.set_title(cell_1 + ' vs ' + cell_2 + ' in ' + region_name, fontsize=12, pad = 15.0)
 
@@ -700,7 +712,10 @@ def DrawPairWiseMapCompare(cell_1, cell_2, mat_dense1, mat_dense2, Chr, st, ed, 
     ax2.spines['top'].set_linewidth(1.6)
     ax2.tick_params(axis = 'y', length=5, width = 1.6)
     ax2.tick_params(axis = 'x', length=5, width = 1.6)
-    ax2.set_xticks(cord_list, ['' for k in range(len(cord_list))], fontsize = 0, rotation = 90)
+    #ax2.set_xticks(cord_list, ['' for k in range(len(cord_list))], fontsize = 0, rotation = 90)
+    ax2.set_xticks(cord_list)
+    ax2.set_xticklabels(labels=['' for k in range(len(cord_list))], fontsize=0, rotation=90)
+
     ax2.set_ylabel(cell_1 + ' \n TSL', fontsize = 10)
 
     ax3 = plt.subplot2grid((9, 7), (7, 0), rowspan=1,colspan=6,sharex=ax1)
@@ -731,8 +746,10 @@ def DrawPairWiseMapCompare(cell_1, cell_2, mat_dense1, mat_dense2, Chr, st, ed, 
     ax.spines['top'].set_linewidth(1.8)
     ax.tick_params(axis = 'y', length=4, width = 1.8)
     ax.tick_params(axis = 'x', length=4, width = 1.8)
-    ax.set_xticks(cord_list, x_ticks_l, fontsize = 10, rotation = -30)
-    
+    #ax.set_xticks(cord_list, x_ticks_l, fontsize = 10, rotation = -30)
+    ax.set_xticks(cord_list)
+    ax.set_xticklabels(labels=x_ticks_l, fontsize=10, rotation=-0)
+
     if save_name != '':
         plt.savefig(save_name, format = 'svg') 
     plt.show()
