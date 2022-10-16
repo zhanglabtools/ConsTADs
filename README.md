@@ -13,7 +13,7 @@ This computational framework consists of three main steps, including:
 3. Refining the boundary score profile based on the contrast P-values of chromatin interactions using three operations, Add, Filter and Combine, to construct the TAD separation landscape.
 
 <p align="center">
-<img src="https://github.com/dangdachang/ConsTADs/raw/main/TAD%20separation%20landscape%20construction.png" width="65%" height="65%" />
+<img src="./TAD%20separation%20landscape%20application.png" width="65%" height="65%" />
 
 </p>
 
@@ -24,12 +24,64 @@ The TAD separation landscape can be used in scenarios such as:
 3. Identify <u>Cons</u>ensus <u>T</u>opological <u>A</u>ssociating <u>D</u>omain<u>s</u> (ConsTADs).
 
 <p align="center">
-<img src="https://github.com/dangdachang/ConsTADs/raw/main/TAD%20separation%20landscape%20application.png"  width="65%" height="65%"/>
+<img src="./TAD%20separation%20landscape%20construction.png"  width="65%" height="65%"/>
 
 
 </p>
 
 ## Getting start
 
-See [ConsTADs usage.ipynb](https://github.com/dangdachang/ConsTADs/blob/main/ConsTADs%20usage.ipynb).
+### Installation
 
+It's recommended to create a conda environment:
+
+```shell
+conda create -n ConsTADs python=3.7
+conda activate ConsTADs
+```
+
+Download packages
+
+```shell
+git clone https://github.com/zhanglabtools/ConsTADs.git
+cd ConsTADs
+```
+
+Install required packages:
+
+```shell
+pip install -r requirement.txt
+```
+
+Install ConsTADs by PyPI:
+
+```shell
+pip install ConsTADs
+```
+
+Install from source code:
+
+```shell
+git clone https://github.com/zhanglabtools/ConsTADs.git
+cd ConsTADs
+python setup.py build
+python setup.py install
+```
+
+### Example usage
+
+See [ConsTADs usage.ipynb](./ConsTADs%20usage.ipynb).
+
+### Support
+
+If you are having issues, please let us know. We have a mailing list located at:
+
+* dangdachang@163.com
+
+### Citation
+
+If ConsTADs is useful for your research, consider citing our preprint:
+
+> Defining the separation landscape of topological domains for decoding consensus domain organization of 3D genome.
+> Dachang Dang, Shao-Wu Zhang, Ran Duan, Shihua Zhang.
+> bioRxiv 2022.08.08.503155; **doi:** https://doi.org/10.1101/2022.08.08.503155

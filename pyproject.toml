@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ConsTADs"
+version = "1.0.0"
+authors = [
+  { name="Dachang Dang", email="dangdachang@163.com"},
+]
+description = "Defining the separation landscape of topological domains for decoding consensus domain organization of 3D genome"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["numpy>=1.20.3",
+        "pandas>=1.3.5",
+        "scipy>=1.7.3",
+        "scikit-learn>=1.0",
+        "tqdm>=4.64.1",
+        "matplotlib>=3.5.0",
+    ]
+
+[project.urls]
+"Homepage" = "https://github.com/zhanglabtools/ConsTADs"
