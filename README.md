@@ -29,7 +29,7 @@ The TAD separation landscape can be used in scenarios such as:
 
 </p>
 
-## Getting start
+## Getting started
 
 ### Installation
 
